@@ -17,7 +17,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
   }
 
   agent_pool_profile {
-    name            = "agentpool"
+    name            = "${var.aks_agent_pool}"
     count           = "${var.aks_agent_count}"
     vm_size         = "${var.aks_agent_size}"
     os_type         = "Linux"

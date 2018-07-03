@@ -18,6 +18,10 @@ variable "client_id" { }
 
 variable "client_secret" { }
 
+variable "tenant_id" { }
+
+variable "subscription_id" { }
+
 variable "aks_name" { }
 
 variable "aks_dns_prefix" { }
@@ -58,8 +62,20 @@ variable "aks_agent_size" {
   default = "Standard_DS1_v2"
 }
 
+variable "aks_agent_pool" {
+  default = "agentpool"
+}
+
 variable "aks_agent_count" {
-  default = "1"
+  default = "2"
+}
+
+variable "aks_agent_count_max" {
+  default = "4"
+}
+
+variable "autoscaler_version" {
+  default = "v1.3.0"
 }
 
 variable "aks_version" {

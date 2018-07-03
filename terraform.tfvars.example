@@ -3,6 +3,8 @@ main_vnet_name      = "myvnet"
 
 client_id           = "some_service_principal_id"
 client_secret       = "some_service_principal_secret"
+tenant_id           = "principal_tentant_id"
+subscription_id     = "principal_subscription_id"
 
 aks_name            = "aks_cluster_name"
 aks_dns_prefix      = "aks_cluster_dns"
