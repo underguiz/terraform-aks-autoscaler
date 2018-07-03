@@ -6,11 +6,11 @@
 
 You first need to create your own `terraform.tfvars` from `terraform.tfvars.example` and `backends.tf` from `backends.tf.example` if you desire to use remote state.
 
-`$ terraform init`
+```
+$ terraform init
+$ terraform plan
+$ terraform apply
+```
+### Contact
 
-`$ terraform plan`
-
-`$ terraform apply`
-
--
 Guilherme França / **guilherme.franca@microsoft.com**
