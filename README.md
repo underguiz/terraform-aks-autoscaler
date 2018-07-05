@@ -21,7 +21,7 @@ $ terraform apply
 
 ### Notes
 
-Horizontal Pod Autoscaler depends on metrics-server that depends on controller-manager, which seems to have some issues with AKS as seen on this [github issue](https://github.com/Azure/AKS/issues/311).
+Sometimes API calls fails with timeout for logs / port-forward and others. [github issue](https://github.com/Azure/AKS/issues/232).
 
 ### Contact
 
