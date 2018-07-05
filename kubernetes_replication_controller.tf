@@ -7,7 +7,7 @@ resource "kubernetes_replication_controller" "wordpress" {
   }
 
   "spec" {
-    replicas = 2
+    replicas = 1
 
     "selector" {
       App = "wordpress"
@@ -41,6 +41,12 @@ resource "kubernetes_replication_controller" "wordpress" {
 
         port {
           container_port = 80
+        }
+        
+        resources {
+           requests {
+               cpu = "100m"
+           }
         }
       }
     }

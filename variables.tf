@@ -67,7 +67,7 @@ variable "aks_agent_pool" {
 }
 
 variable "aks_agent_count" {
-  default = "2"
+  default = "1"
 }
 
 variable "aks_agent_count_max" {
