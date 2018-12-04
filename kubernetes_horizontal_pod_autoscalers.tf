@@ -7,11 +7,12 @@ resource "kubernetes_horizontal_pod_autoscaler" "wordpress" {
   spec {
     max_replicas                      = 8
     min_replicas                      = 1
-    target_cpu_utilization_percentage = 10
+
     scale_target_ref {
       kind = "ReplicationController"
       name = "wordpress"
     }
+    
   }
 
   depends_on = [ "null_resource.kubernetes_config_autoscaler" ]

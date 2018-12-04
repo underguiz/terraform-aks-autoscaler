@@ -14,14 +14,10 @@ $ terraform apply
 
 ### Resources
 
-* [Cluster Autoscaler AKS Deployment](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/azure/README.md#aks-or-acs-deployment)
-* [Metrics Server](https://github.com/kubernetes-incubator/metrics-server/)
+* [Cluster Autoscaler AKS Deployment](https://docs.microsoft.com/en-us/azure/aks/autoscaler)
 * [AKS Terraform Resource](https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html)
 * [Kubernetes Terraform Provider](https://www.terraform.io/docs/providers/kubernetes/index.html)
 
-### Notes
-
-Sometimes API calls fails with timeout for logs / port-forward and others. [github issue](https://github.com/Azure/AKS/issues/232).
 
 ### Contact
 

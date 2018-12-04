@@ -21,7 +21,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
     count           = "${var.aks_agent_count}"
     vm_size         = "${var.aks_agent_size}"
     os_type         = "Linux"
-    os_disk_size_gb = 0
+    os_disk_size_gb = 30
     vnet_subnet_id  = "${azurerm_subnet.main-aks.id}"
   }
 

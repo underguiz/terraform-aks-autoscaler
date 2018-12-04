@@ -40,10 +40,6 @@ resource "null_resource" "kubernetes_config_autoscaler" {
   }
 
   provisioner "local-exec" {
-    command = "kubectl apply --kubeconfig=autoscaler/kubeconfig -f metrics-server/"
-  }
-
-  provisioner "local-exec" {
     command = "kubectl apply --kubeconfig=autoscaler/kubeconfig -f - <<EOF\n${data.template_file.autoscaler_config.rendered}\nEOF"
   }
 

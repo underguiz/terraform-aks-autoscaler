@@ -75,11 +75,11 @@ variable "aks_agent_count_max" {
 }
 
 variable "autoscaler_version" {
-  default = "v1.3.0"
+  default = "v1.13.0"
 }
 
 variable "aks_version" {
-  default = "1.10.3"
+  default = "1.11.5"
 }
 
 
