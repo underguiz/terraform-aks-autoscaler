@@ -22,3 +22,7 @@ $ terraform apply
 ### Contact
 
 Guilherme França / **guilherme.franca@microsoft.com**
+
+### Disclaimer
+
+This is not supported in any form. Use at your own risk.
